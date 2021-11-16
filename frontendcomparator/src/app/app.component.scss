@@ -1,9 +1,4 @@
-$main-color: #039dff;
-$second-color: #ebecf2;
-$white: #fff;
-$angular: red;
-$react: rgb(0,216,255);
-$vuejs: rgb(65,184,131);
+@import "colors";
 
 nav {
     .brand {
@@ -69,41 +64,6 @@ nav {
                     color: $vuejs;
                 }
             }
-        }
-    }
-}
-
-main {
-    height: 100vh;
-
-    .container {
-        height: 100vh;    
-        background-color: rgba(0,0,0, 0.1);
-        border-radius: 15px;
-    }
-
-    h1 {
-        font-size: 28px;
-
-        i {
-            color: $angular;
-        }
-    }
-
-    p {
-        font-size: 16px;
-        text-align: justify;
-
-        .angular {
-            color: $angular;
-        }
-
-        .vuejs {
-            color: $vuejs;
-        }
-
-        .react {
-            color: $react;
         }
     }
 }

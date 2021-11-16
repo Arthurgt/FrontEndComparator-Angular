@@ -1,0 +1,119 @@
+@import "../../colors";
+
+main {
+    height: 100vh;
+
+    .container {
+        height: 100vh;    
+        background-color: rgba(0,0,0, 0.1);
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+
+        i {
+            color: $angular;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        text-align: justify;
+
+        .angular {
+            color: $angular;
+        }
+
+        .vuejs {
+            color: $vuejs;
+        }
+
+        .react {
+            color: $react;
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    main {
+        height: 90vh;
+    
+        .container {
+            height: 60vh; 
+        }
+    
+        h1 {
+            font-size: 32px;
+        }
+    
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    main {
+        height: 90vh;
+    
+        .container {
+            height: 60vh;
+            box-shadow: 5px 5px 50px black;    
+        }
+    
+        h1 {
+            font-size: 34px;
+        }
+    
+        p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    main {
+        height: 90vh;
+    
+        .container {
+            height: 60vh;    
+        }
+    
+        h1 {
+            font-size: 35px;
+        }
+    
+        p {
+            font-size: 23px;
+        }
+    }
+}
+
+@media(min-width: 1400px) {
+    main {
+        height: 90vh;
+    
+        .container {
+            height: 60vh;    
+        }
+    
+        h1 {
+            font-size: 36px;
+        }
+    
+        p {
+            font-size: 24px;
+        }
+    }
+}
+
+@media(min-width: 576px) and (max-height: 680px) {
+    main {
+        height: 100vh;
+    
+        .container {
+            height: 100vh;    
+        }
+    }
+}
