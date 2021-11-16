@@ -84,11 +84,27 @@ main {
 
     h1 {
         font-size: 28px;
+
+        i {
+            color: $angular;
+        }
     }
 
     p {
         font-size: 16px;
         text-align: justify;
+
+        .angular {
+            color: $angular;
+        }
+
+        .vuejs {
+            color: $vuejs;
+        }
+
+        .react {
+            color: $react;
+        }
     }
 }
 
