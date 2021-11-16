@@ -13,31 +13,31 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav d-flex justify-content-between align-items-baseline">
           <li class="nav-item active">
-            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sm load</a>
+            <a class="nav-link" routerLink="/smload" routerLinkActive="active">Sm load</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Md load</a>
+            <a class="nav-link" routerLink="/mdload" routerLinkActive="active">Md load</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Lg load</a>
+            <a class="nav-link" routerLink="/lgload" routerLinkActive="active">Lg load</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CRUD</a>
+            <a class="nav-link" routerLink="/crud" routerLinkActive="active">CRUD</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Animations</a>
+            <a class="nav-link" routerLink="/animations" routerLinkActive="active">Animations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Asynchronus</a>
+            <a class="nav-link" routerLink="/asynchronus" routerLinkActive="active">Asynchronus</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Forms</a>
+            <a class="nav-link" routerLink="/forms" routerLinkActive="active">Forms</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Changing data</a>
+            <a class="nav-link" routerLink="/changingdata" routerLinkActive="active">Changing data</a>
           </li>
           <li class="nav-item app-change d-flex flex-row">
             <a class="nav-link p-1" href="#"><i class="fab fa-angular"></i></a>
@@ -49,17 +49,7 @@
     </div>
   </div>
 </nav>
-<main class="d-flex flex-column justify-content-center">
-  <div class="container d-flex flex-column justify-content-evenly">
-    <h1 class="text-center"><i class="fas fa-chart-bar"></i> About this application <i class="fas fa-chart-bar"></i></h1> 
-      <p>Application tries to compare 3 diffrent frontend frameworks performance. Frameworks used in this application: <span class="angular">Angular</span>, <span class="vuejs">Vuejs</span>, <span class="react">React</span>.</p>
-      <p>The test is about performing tasks such as: data loading speed, CRUD operations,
-      animations, asynchronus operations, forms rendering and validation, http requests and rendering
-      data after changes.</p>
-      <p>Application is connected with backend application written in Java and Spring stack.
-      This module of app is written in Angular 9. </p>
-  </div>
-</main>
+<router-outlet></router-outlet>
 <footer class="bg-light d-flex flex-columtn justify-content-center">
   <div class="d-flex flex-row justify-content-center align-items-center">
     <p>Artur Babkiewicz 2022</p>
