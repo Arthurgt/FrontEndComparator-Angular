@@ -1,0 +1,11 @@
+main {
+    .grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0 -5px;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

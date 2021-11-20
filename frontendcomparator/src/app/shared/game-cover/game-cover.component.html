@@ -1,0 +1,15 @@
+<div class="grid_item">
+    <div class="card">
+      <div class="card-image">
+        <img [src]="game.poster" />
+        <span class="card-title black">{{ game.title }}</span>
+      </div>
+      <div class="card-content">
+        <p><span class="label">Description:</span> {{ game.description.slice(0, 200) }}.</p>
+        <p><span class="label">Year:</span> {{ game.year }}</p>
+        <p><span class="label">Category:</span> {{ game.category }}</p>
+        <p><span class="label">Country:</span> {{ game.country }}</p>
+        <p><span class="label">Studio:</span> {{ game.studio }}</p>
+      </div>
+    </div>
+</div>

@@ -14,6 +14,9 @@ import { AnimationsComponent } from './pages/animations/animations.component';
 import { AsynchronusComponent } from './pages/asynchronus/asynchronus.component';
 import { FormsComponent } from './pages/forms/forms.component';
 import { ChangingdataComponent } from './pages/changingdata/changingdata.component';
+import { PerformanceMeterComponent } from './shared/performance-meter/performance-meter.component';
+import { GameCoverComponent } from './shared/game-cover/game-cover.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,13 +30,16 @@ import { ChangingdataComponent } from './pages/changingdata/changingdata.compone
     AnimationsComponent,
     AsynchronusComponent,
     FormsComponent,
-    ChangingdataComponent
+    ChangingdataComponent,
+    PerformanceMeterComponent,
+    GameCoverComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

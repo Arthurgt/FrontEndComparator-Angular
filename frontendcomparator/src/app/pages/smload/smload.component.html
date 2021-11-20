@@ -1,1 +1,7 @@
-<p>smload works!</p>
+<main>
+    <div class="container d-flex justify-content-center">
+        <div class="grid">
+            <app-game-cover *ngFor="let game of games | async" [game]="game"></app-game-cover>
+        </div>
+    </div>
+</main>
