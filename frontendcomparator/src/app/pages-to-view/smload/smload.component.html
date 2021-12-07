@@ -1,0 +1,15 @@
+<main>
+    <div class="container performance d-flex flex-column justify-content-evenly align-items-center">
+        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <p class="text-center">Data download time: {{ dataDownloadTime }} ms</p> 
+        <p class="text-center">Page load time: {{ pageLoadTime }} ms</p> 
+        <p class="text-center">The maximum size of the heap: {{ window.performance.memory.jsHeapSizeLimit }} bytes</p> 
+        <p class="text-center">The total allocated heap size: {{ window.performance.memory.totalJSHeapSize }} bytes</p> 
+        <p class="text-center">The currently active segment of JS heap: {{ window.performance.memory.usedJSHeapSize }} bytes</p> 
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div class="grid">
+            <app-game-cover *ngFor="let game of games | async" [game]="game"></app-game-cover>
+        </div>
+    </div>
+</main>

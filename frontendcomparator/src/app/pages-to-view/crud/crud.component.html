@@ -1,0 +1,76 @@
+<main class="container text-center">
+    <div class="grid">
+      <form class="container" (ngSubmit)="addGame(createForm)" #createForm="ngForm" name="createForm">
+        <h2 class="form-label">Create Game</h2>
+        <div class="row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="title">Title:</label>
+            <input class="form__field form-control" id="title" type="text" [(ngModel)]="modelToAdd.title" name="title" #title="ngModel" required/>
+            <div class="alert alert-danger" *ngIf="title.touched && !title.valid">Title is Required</div>
+          </div>
+        </div>
+        <div class="row row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="category">Category:</label>
+            <input class="form__field" id="category" type="text" [(ngModel)]="modelToAdd.category" name="category"/>
+          </div>
+        </div>
+        <div class="row row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="year">Year:</label>
+            <input class="form__field" id="year" type="text" [(ngModel)]="modelToAdd.year" name="year"/>
+          </div>
+        </div>
+        <div class="row row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="country">Country:</label>
+            <input class="form__field" id="country" type="text" [(ngModel)]="modelToAdd.country" name="country"/>
+          </div>
+        </div>
+        <div class="row row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="studio">Studio:</label>
+            <input class="form__field" id="studio" type="text" [(ngModel)]="modelToAdd.studio" name="studio"/>
+          </div>
+        </div>
+        <div class="row row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="description">Description:</label>
+            <input class="form__field" id="description" type="text" [(ngModel)]="modelToAdd.description" name="description"/>
+          </div>
+        </div>
+        <div class="row row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="poster">Poster link:</label>
+            <input class="form__field" id="poster" type="text" [(ngModel)]="modelToAdd.poster" name="poster"/>
+          </div>
+        </div>
+        <div class="row button-row d-flex flex-row justify-content-center">
+          <button class="button" type="submit" [disabled]="createForm.invalid">Add</button>
+          <button class="button" type="reset">Reset</button>
+        </div>
+        <br>
+      </form>
+      <div class="container d-flex flex-column spam-container">
+        <h2 class="form-label">Requests test</h2>
+        <div>
+          <button class="button spam-button" (click)="add100Games()">Send 100 requests</button>
+          <button class="button spam-button" (click)="add1000Games()">Send 1000 requests</button>
+        </div>
+      </div>
+      <form class="container" (ngSubmit)="removeGame(removeForm)" #removeForm="ngForm" name="removeForm">
+        <h2 class="form-label">Remove Game</h2>
+        <div class="row row d-flex flex-row justify-content-center">
+          <div class="form__group field">
+            <label class="form__label" for="titleToRemove">Title to remove:</label>
+            <input class="form__field form-control" id="titleToRemove" type="text" [(ngModel)]="titleToRemove" name="titleToRemove" #titleRemove="ngModel" required/>
+            <div class="alert alert-danger" *ngIf="titleRemove.touched && !titleRemove.valid">Title is Required</div>
+          </div>
+        </div>
+        <div class="row button-row d-flex flex-row justify-content-center">
+          <button class="button" type="submit" [disabled]="removeForm.invalid">Remove</button>
+          <button class="button" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+</main>

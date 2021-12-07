@@ -1,0 +1,12 @@
+<main class="container">
+  <div class="grid">
+    <a class="button text-center"
+      *ngFor="let category of categories" (click)="changeActiveCategory(category)"
+      >{{ category }}</a>
+  </div>
+  <div class="grid">
+    <ng-container *ngFor="let game of games | async">
+      <app-game-cover *ngIf="activeCategory===game.category" [game]="game"></app-game-cover>
+    </ng-container>
+  </div>
+</main>

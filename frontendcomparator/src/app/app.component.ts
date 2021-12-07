@@ -15,8 +15,7 @@ export class AppComponent {
 
   constructor(private http: HttpGamesService){}
 
-  ngOnInit(){
-    this.game = this.http.getGame('Total War');
-    this.game.subscribe(x => console.log(x));
+  ngOnInit() {
+    
   }
 }

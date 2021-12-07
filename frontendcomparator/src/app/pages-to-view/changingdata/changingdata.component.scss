@@ -1,0 +1,35 @@
+@import "../../colors";
+
+main{
+
+.grid {
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    a {
+        margin: 5px;
+      }
+
+    .button {
+      border-width: 4px;
+      border-style: solid;
+      background-color: $second-color;
+      border-image: linear-gradient(to right, black, gray) 1;
+      margin-top: 2px;
+      margin-bottom: 1px;
+      width: 100px;
+      transition: background-color 0.2s, width 0.1s;
+    }
+
+    .button:hover {
+      background-color: rgb(221, 215, 215);
+  }
+
+  .button:active {
+      width: 70px;
+  }
+}
+}
